@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!---Nav bar for Carousel ---->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Mark Snow</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a href="#applications">APPLICATIONS</a></li>
+          <li><a href="#professional">PROFESSIONAL</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#applications">APPLICATIONS</a></li>
+                <li><a href="#professional">PROFESSIONAL</a></li>
+                <li><a href="#contact">CONTACT</a></li> 
+              </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="./assets/imgs/preworkname.PNG" alt="preworkname">
+            <div class="carousel-caption carouselone">
+              <h3>I'm Building</h3>
+              <p>Applications using Javascript, Node js, JQuery, Express, API's, and more...</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="./assets/imgs/WeatherDashboardMain.PNG" alt="weatherdashboard">
+            <div class="carousel-caption carouseltwo">
+              <h3>The Weather App</h3>
+              <p>Utilizes Javascript and an API to create a 5-Day Weather Forecast</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="./assets/imgs/BitsnBytes.PNG" alt="bitsnbytes">
+            <div class="carousel-caption carouselthree">
+              <h3>Bits N Bytes</h3>
+              <p>Need to purchase your meal in Pounds, Yen, or Swiss Francs? Come on in and enjoy.</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> 
+
+      <!----Div for applications-->
+      <!----First Row -->      
+      <div id="applications" class="container text-center">
+        <h3>My Application Portfolio</h3>
+        <p>Different technologies are used to create functional applications for each user.</p>
+        <p>The applications...</p>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <p><strong>Bits N Bytes</strong></p><br>
+            <a href="#demo" data-toggle="collapse">
+              <img src="./assets/imgs/BitsnBytes.PNG" class="img-circle person" alt="BitsnBytes" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse">
+              <br>
+              <p>Converts US Dollars to other currencies.</p>
+              <p>Allows user to pick items from menu.</p>
+              <p>Features a joke API.</p>
+              <p><a href="https://ambrosiomaxwell.github.io/Project1/">BitsnBytes</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p><strong>The Weather Dashboard</strong></p><br>
+            <a href="#demotwo" data-toggle="collapse">
+              <img src="./assets/imgs/WeatherDashboardMain.PNG" class="img-circle person" alt="TheWeatherDashboard" width="255" height="255">
+            </a>
+            <div id="demotwo" class="collapse">
+              <br>
+              <p>Uses a Weather API.</p>
+              <p>Javascript and AJAX</p>
+              <p>Current Day and Five Day Forecast</p>
+              <p><a href="https://msnow-21.github.io/Weather_Dashboard/">TheWeatherDashboard</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p><strong>Work Day Scheduler</strong></p><br>
+            <a href="#demothree" data-toggle="collapse">
+              <img src="./assets/imgs/workdayplanner.PNG" class="img-circle person" alt="WorkDayScheduler" width="255" height="255">
+            </a>
+            <div id="demothree" class="collapse">
+              <br>
+              <p>Plan your day</p>
+              <p>Save notes with local storage</p>
+              <p>Refreshes each day</p>
+              <p><a href="https://msnow-21.github.io/Work_Day_Scheduler/">WorkDayScheduler</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!----Second Row-->
+        
+        <div class="row">
+          <br>
+          <div class="col-sm-4">
+            <p><strong>Note Taker</strong></p><br>
+            <a href="#demofour" data-toggle="collapse">
+              <img src="./assets/imgs/notetaker.PNG" class="img-circle person" alt="notetaker" width="255" height="255">
+            </a>
+            <div id="demofour" class="collapse">
+              <br>
+              <p>Creates a Note and a Task</p>
+              <p>Stores notes</p>
+              <p>Deletes notes</p>
+              <p><a href="https://sleepy-earth-26614.herokuapp.com/">Note Taker</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p><strong>Code Quiz</strong></p><br>
+            <a href="#demofive" data-toggle="collapse">
+              <img src="./assets/imgs/codequiz.PNG" class="img-circle person" alt="codequiz" width="255" height="255">
+            </a>
+            <div id="demofive" class="collapse">
+              <br>
+              <p>Test your Javascript knowledge</p>
+              <p>Uses Javascript to create HTML elements</p>
+              <p>A timed event</p>
+              <p><a href="https://msnow-21.github.io/Code_Quiz/">Code Quiz</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p><strong>The Wolf</strong></p><br>
+            <a href="#demosix" data-toggle="collapse">
+              <img src="./assets/imgs/Wolf.PNG" class="img-circle person" alt="wolf" width="255" height="255">
+            </a>
+            <div id="demosix" class="collapse">
+              <br>
+              <p>A website about my favorite animal</p>
+              <p>Allows the user to learn about wolves</p>
+              <p>Click to learn more</p>
+              <p><a href="https://msnow-21.github.io/Wolf/">The Wolf</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!----Professional Links-->
+    <div class="bg-1">
+      <div class="container" id="professional">
+        <h3 class="text-center">Professional Links and Documents</h3>
+        <p class="text-center">Github, LinkedIn, Resume<br>Please review</p>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="./assets/imgs/github.png" alt="Github" width="250" height="250">
+            <p><strong>Github</strong></p>
+            <p>Projects and Activities</p>
+            <a href="https://github.com/MSnow-21"><button class="btn">Visit Github</button></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="./assets/imgs/linkedin.png" alt="LinkedIn" width="250" height="250">
+            <p><strong>LinkedIn</strong></p>
+            <p>Professional Link</p>
+            <a href="www.linkedin.com/in/marksnowcode"><button class="btn">Visit LinkedIn</button></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="./assets/imgs/linkedin.png" alt="Resume" width="250" height="250">
+            <p><strong>Resume</strong></p>
+            <p>Professional Details</p>
+            <a href="./assets/imgs/marksnowresume.pdf"><button class="btn">View Resume</button></a>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+    <!----Contact Form -->
+    <div class="container" id="contact">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>Please leave a message</em></p>
+        <div class="row test">
+          <div class="col-md-4">
+            <p>Contact Information</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Cleveland, US</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: 419-202-3091</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: msnowcode@gmail.com</p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+</body>
+</html> 
