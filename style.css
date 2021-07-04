@@ -85,6 +85,11 @@ border-color: transparent;
     font:bold;
     color:rgb(12, 233, 49) !important;
 }
+
+.carouselfour{
+    font:bold;
+    color:#000 !important;
+}
   
 @media (max-width: 600px) {
         .carousel-caption {
